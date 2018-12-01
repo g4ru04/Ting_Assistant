@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed|IBM+Plex+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://assistant-chat-us-south.watsonplatform.net/web/chat/styles/base.css">
+  <link rel="stylesheet" href="https://assistant-chat-us-south.watsonplatform.net/web/chat/styles/themes/default.css">
+  <link rel="stylesheet" href="https://assistant-chat-us-south.watsonplatform.net/web/chat/styles/chat.css">
+  <style>
+  .Chat__holder{
+	width: calc(100vw - 16px);
+	height: calc( 100vh - 30px );
+	margin:6px;
+  }
+  .WatsonChat {
+	width:100%;
+  }
+  </style>
+  <title>北祥人事小幫手</title>
+</head>
+<body>
+  <div class='Chat__holder'>
+    <div class='Chat__body'></div>
+  </div>
+  <script src="https://assistant-chat-us-south.watsonplatform.net/web/chat/chat.min.js"></script>
+  <script>
+  
+    const config = {
+      bot_image: null, // 'http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-11/256/smiling-face-with-open-mouth.png'
+      bot_name: '',
+      debug: true,
+      element: document.querySelector('.Chat__body'),
+      integration_id: 'd93ba268-69d9-4ad7-9417-5ff1307022a1',
+      post_url: 'https://assistant-chat-us-south.watsonplatform.net/public/message/'
+    };
+    const chat = new WatsonChat(config);
+	setTimeout(function(){
+		document.querySelector(".WatsonChat__message:first-child .WatsonChat__received div").innerHTML  = '<img src="https://stickershop.line-scdn.net/stickershop/v1/product/3247433/LINEStorePC/main.png;compress=true" width="120" height="120"><div>你好!!我是北祥人事小幫手!<br>歡迎問我人事福利相關的問題~<br>能回答的我會盡量回答的</div>';
+	},3000);
+	setTimeout(function(){
+		document.querySelector(".WatsonChat__message:first-child .WatsonChat__received div").innerHTML  = '<img src="https://stickershop.line-scdn.net/stickershop/v1/product/3247433/LINEStorePC/main.png;compress=true" width="120" height="120"><div>你好!!我是北祥人事小幫手!<br>歡迎問我人事福利相關的問題~<br>能回答的我會盡量回答的</div>';
+	},5000);
+	setTimeout(function(){
+		document.querySelector(".WatsonChat__message:first-child .WatsonChat__received div").innerHTML  = '<img src="https://stickershop.line-scdn.net/stickershop/v1/product/3247433/LINEStorePC/main.png;compress=true" width="120" height="120"><div>你好!!我是北祥人事小幫手!<br>歡迎問我人事福利相關的問題~<br>能回答的我會盡量回答的</div>';
+	},10000);
+	
+	
+  </script>
+</body>
+</html>
