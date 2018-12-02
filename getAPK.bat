@@ -1,1 +1,1 @@
-copy C:/AwesomeProject/android/app/build/outputs/apk/app-release.apk ./
+copy C:/AwesomeProject/android/app/build/outputs/apk/app-release.apk ./app-release.apk
