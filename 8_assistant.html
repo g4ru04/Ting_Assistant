@@ -15,8 +15,8 @@
   .WatsonChat {
 	width:100%;
   }
-  .WatsonChat__message:first-child .WatsonChat__received div{
-	font-size:0.8em;
+  .WatsonChat__message:first-child .WatsonChat__received div div{
+	/*font-size:0.8em;*/
   }
   </style>
   <title>北祥人事小幫手</title>
@@ -38,13 +38,13 @@
     };
     const chat = new WatsonChat(config);
 	setTimeout(function(){
-		document.querySelector(".WatsonChat__message:first-child .WatsonChat__received div").innerHTML  = '<img src="https://stickershop.line-scdn.net/stickershop/v1/product/3247433/LINEStorePC/main.png;compress=true" width="120" height="120"><div>你好!!我是北祥人事小幫手!<br>歡迎問我人事福利相關問題~<br>能回答的我會盡量回答的</div>';
+		document.querySelector(".WatsonChat__message:first-child .WatsonChat__received div").innerHTML  = '<img src="https://stickershop.line-scdn.net/stickershop/v1/product/3247433/LINEStorePC/main.png;compress=true" width="120" height="120"><div>我是北祥人事小幫手!<br>只要是人事福利的問題,<br>我都能為妳解答喔~</div>';
 	},3000);
 	setTimeout(function(){
-		document.querySelector(".WatsonChat__message:first-child .WatsonChat__received div").innerHTML  = '<img src="https://stickershop.line-scdn.net/stickershop/v1/product/3247433/LINEStorePC/main.png;compress=true" width="120" height="120"><div>你好!!我是北祥人事小幫手!<br>歡迎問我人事福利相關問題~<br>能回答的我會盡量回答的</div>';
+		document.querySelector(".WatsonChat__message:first-child .WatsonChat__received div").innerHTML  = '<img src="https://stickershop.line-scdn.net/stickershop/v1/product/3247433/LINEStorePC/main.png;compress=true" width="120" height="120"><div>我是北祥人事小幫手!<br>只要是人事福利的問題,<br>我都能為妳解答喔~</div>';
 	},5000);
 	setTimeout(function(){
-		document.querySelector(".WatsonChat__message:first-child .WatsonChat__received div").innerHTML  = '<img src="https://stickershop.line-scdn.net/stickershop/v1/product/3247433/LINEStorePC/main.png;compress=true" width="120" height="120"><div>你好!!我是北祥人事小幫手!<br>歡迎問我人事福利相關問題~<br>能回答的我會盡量回答的</div>';
+		document.querySelector(".WatsonChat__message:first-child .WatsonChat__received div").innerHTML  = '<img src="https://stickershop.line-scdn.net/stickershop/v1/product/3247433/LINEStorePC/main.png;compress=true" width="120" height="120"><div>我是北祥人事小幫手!<br>只要是人事福利的問題,<br>我都能為妳解答喔~</div>';
 	},10000);
 	
 	
