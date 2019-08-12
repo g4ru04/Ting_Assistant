@@ -1,0 +1,217 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<title>對話查詢</title>
+	<link rel="stylesheet" href="./main.css">
+	
+	<style>
+
+	#table_container_who td:nth-child(2){
+		word-break: break-all;
+		max-width:300px;
+		text-align:left;
+	}
+	div.test{
+		font-family: "TOYOTA-2016",Helvetica,Verdana,Arial,"\5FAE\8EDF\6B63\9ED1\9AD4","Microsoft JhengHei","\5137\9ED1 Pro","LiHei Pro",sans-serif !important;
+		content:"\E925"
+	}
+	#template *{
+		float:left;
+	}
+	input{
+		height:20px;
+		width:120px;
+		margin:5px;
+		size:10px;
+	}
+	#template div{
+		font-size:24px;
+		margin:6px;
+	}
+	</style>
+</head>
+<body>
+<input id='size' value="24" placeholder="icon大小"/><br>
+<input id='color' value="#000000" placeholder="icon顏色"/><br>
+<input id='bg-color' value="#eeeeee"  placeholder="背景顏色"/><br>
+<div id='template'>
+	<div class='icon-location-service'></div>
+	<div class='icon-location-showroom'></div>
+	<div class='icon-ACA'></div>
+	<div class='icon-pmhvbattery'></div>
+	<div class='icon-charger-cost'></div>
+	<div class='icon-charger-count'></div>
+	<div class='icon-logo'></div>
+	<div class='icon-drive'></div>
+	<div class='icon-location'></div>
+	<div class='icon-match'></div>
+	<div class='icon-owner'></div>
+	<div class='icon-service'></div>
+	<div class='icon-share'></div>
+	<div class='icon-sp'></div>
+	<div class='icon-line'></div>
+	<div class='icon-yt'></div>
+	<div class='icon-fb'></div>
+	<div class='icon-ig'></div>
+	<div class='icon-calc'></div>
+	<div class='icon-darrL'></div>
+	<div class='icon-darrM'></div>
+	<div class='icon-darrS'></div>
+	<div class='icon-larrL'></div>
+	<div class='icon-larrM'></div>
+	<div class='icon-larrS'></div>
+	<div class='icon-rarrL'></div>
+	<div class='icon-rarrM'></div>
+	<div class='icon-rarrS'></div>
+	<div class='icon-uarrL'></div>
+	<div class='icon-uarrM'></div>
+	<div class='icon-uarrS'></div>
+	<div class='icon-search'></div>
+	<div class='icon-equip'></div>
+	<div class='icon-check'></div>
+	<div class='icon-cross'></div>
+	<div class='icon-aed'></div>
+	<div class='icon-gps'></div>
+	<div class='icon-hamburger'></div>
+	<div class='icon-tel'></div>
+	<div class='icon-time'></div>
+	<div class='icon-pmantirust'></div>
+	<div class='icon-pmav'></div>
+	<div class='icon-pmbasic'></div>
+	<div class='icon-pmbattery'></div>
+	<div class='icon-pmcomponents'></div>
+	<div class='icon-pmexhaust'></div>
+	<div class='icon-pmextend'></div>
+	<div class='icon-pmsparkplug'></div>
+	<div class='icon-pmtire'></div>
+	<div class='icon-pmtowing'></div>
+	<div class='icon-rights1'></div>
+	<div class='icon-rights2'></div>
+	<div class='icon-rights3'></div>
+	<div class='icon-rights4'></div>
+	<div class='icon-rights5'></div>
+	<div class='icon-rights6'></div>
+	<div class='icon-rights7'></div>
+	<div class='icon-rights8'></div>
+	<div class='icon-rights9'></div>
+	<div class='icon-video-play'></div>
+	<div class='icon-compare'></div>
+	<div class='icon-match2-1'></div>
+	<div class='icon-match2-2'></div>
+	<div class='icon-match2-3'></div>
+	<div class='icon-match2-4'></div>
+	<div class='icon-match2-5'></div>
+	<div class='icon-match2-6'></div>
+	<div class='icon-match2-7'></div>
+	<div class='icon-match3-1'></div>
+	<div class='icon-match3-2'></div>
+	<div class='icon-match3-3'></div>
+	<div class='icon-match3-4'></div>
+	<div class='icon-download'></div>
+	<div class='icon-minus'></div>
+	<div class='icon-plus'></div>
+	<div class='icon-86'></div>
+	<div class='icon-alphard'></div>
+	<div class='icon-altis'></div>
+	<div class='icon-booking'></div>
+	<div class='icon-calculator'></div>
+	<div class='icon-camry'></div>
+	<div class='icon-camry_hybrid'></div>
+	<div class='icon-collection'></div>
+	<div class='icon-compare2'></div>
+	<div class='icon-eco'></div>
+	<div class='icon-maintenance'></div>
+	<div class='icon-news'></div>
+	<div class='icon-prado'></div>
+	<div class='icon-previa'></div>
+	<div class='icon-prius'></div>
+	<div class='icon-prius_alpha'></div>
+	<div class='icon-prius_c'></div>
+	<div class='icon-rav4'></div>
+	<div class='icon-rav4_hybrid'></div>
+	<div class='icon-safety'></div>
+	<div class='icon-secretary'></div>
+	<div class='icon-showroom'></div>
+	<div class='icon-sienna'></div>
+	<div class='icon-sienta'></div>
+	<div class='icon-vios'></div>
+	<div class='icon-wish'></div>
+	<div class='icon-yaris'></div>
+	<div class='icon-cart'></div>
+	<div class='icon-list'></div>
+	<div class='icon-owner-k'></div>
+	<div class='icon-zoomin'></div>
+	<div class='icon-zoomout'></div>
+	<div class='icon-k-air-condition'></div>
+	<div class='icon-k-brake'></div>
+	<div class='icon-k-drive-train'></div>
+	<div class='icon-k-engine'></div>
+	<div class='icon-k-steering'></div>
+	<div class='icon-k-suspension'></div>
+	<div class='icon-bag'></div>
+	<div class='icon-dollar-100'></div>
+	<div class='icon-light-bulb'></div>
+	<div class='icon-tech-car'></div>
+	<div class='icon-tech-man'></div>
+	<div class='icon-tech-road'></div>
+	<div class='icon-tech-car2'></div>
+	<div class='icon-tech-deskboard'></div>
+	<div class='icon-tech-GAS'></div>
+	<div class='icon-tech-laugh'></div>
+	<div class='icon-tech-tree'></div>
+	<div class='icon-ABS'></div>
+	<div class='icon-AVAS'></div>
+	<div class='icon-DAC'></div>
+	<div class='icon-LSD'></div>
+	<div class='icon-VDIM'></div>
+	<div class='icon-ACC'></div>
+	<div class='icon-AHB'></div>
+	<div class='icon-AHS'></div>
+	<div class='icon-BAS'></div>
+	<div class='icon-B-camera'></div>
+	<div class='icon-BOS'></div>
+	<div class='icon-B-sensor'></div>
+	<div class='icon-BSM'></div>
+	<div class='icon-DSC'></div>
+	<div class='icon-EBD'></div>
+	<div class='icon-EBS'></div>
+	<div class='icon-HAC'></div>
+	<div class='icon-LDA'></div>
+	<div class='icon-PCS'></div>
+	<div class='icon-PVM'></div>
+	<div class='icon-RCTA'></div>
+	<div class='icon-S-VSC'></div>
+	<div class='icon-TPMS'></div>
+	<div class='icon-TRC'></div>
+	<div class='icon-VSC'></div>
+
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<script>
+
+$(function(){
+	$("#template div").css("font-size",$("#size").val("24")+"px");
+	$("#template div").css("color",$("#000000").val("#000000"));
+	$("body").css("background",$("#bg-color").val("#ffffff"));
+	$("#template div").css("font-size","24px");
+	$("#template div").css("color","#000000");
+	$("body").css("background","#ffffff");
+	$("#size,#color,bg-color").change(function(){
+		console.log($("#size").val());
+		console.log($("#color").val());
+		console.log($("#bg-color").val());
+		$("#template div").css("font-size",$("#size").val()+"px");
+		$("#template div").css("color",$("#color").val());
+		$("body").css("background",$("#bg-color").val());
+		
+	});
+});
+
+</script>
+</body>
+</html>
