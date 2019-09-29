@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>北祥股份有限公司 雲端電商管理平台</title>
+	<link rel="stylesheet" href="vendor/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="vendor/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<style>
+		h3.ui-list-title {
+			border-bottom: 1px solid #ccc;
+			color: #307CB0;
+		}
+		section {
+			margin-bottom: 60px;
+		}
+		.grid-bg [class^="col-"] {
+			background: #eee;
+			border: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+<div class="page-wrapper">
+	<div class="header">
+		<a class="sideNav-toggle" href="#"></a>
+		<h1 class="aber-header-logo">雲端電商管理平台</h1>
+		<div class="userinfo">
+			<p>使用者<span>Ben</span></p>
+			<a href="login.html" class="btn-logout">登出</a>
+		</div>
+	</div><!-- /.header -->
+
+	<div class="sidenav">
+		<ul>
+			<li class="active"><img src="images/sidenav-transaction.svg" alt="">交易處理
+				<ul>
+					<li><a href="order-transfer.html">訂單拋轉作業</a></li>
+					<li><a href="ui-elements.html">UI 元件列表</a></li>
+				</ul>
+			</li>
+			<li><img src="images/sidenav-support.svg" alt="">後臺支援系統
+				<ul>
+					<li><a href="page-template.html">進貨管理</a></li>
+					<li><a href="#">銷貨管理</a></li>
+					<li><a href="#">庫存管理</a></li>
+					<li><a href="#">商品類型管理</a></li>
+					<li><a href="#">商品單位管理</a></li>
+					<li><a href="#">供應商管理</a></li>
+					<li><a href="#">用戶管理</a></li>
+					<li><a href="#">公司管理</a></li>
+				</ul>
+			</li>
+			<li><img src="images/sidenav-report.svg" alt="">報表管理
+				<ul>
+					<li><a href="#">訂單報表</a></li>
+					<li><a href="#">配送報表</a></li>
+					<li><a href="#">退貨報表</a></li>
+				</ul>
+			</li>
+			<li><img src="images/sidenav-chart.svg" alt="">分析圖表
+				<ul>
+					<li><a href="#">出貨量統計圖</a></li>
+					<li><a href="#">銷售金額統計圖</a></li>
+					<li><a href="#">銷售金額比例統計圖</a></li>
+				</ul>
+			</li>
+			<li><img src="images/sidenav-school.svg" alt="">線上學院
+				<ul>
+					<li><a href="#">線上學院</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div><!-- /.sidenav -->
+
+	<!-- Mobile Side Menu -->
+	<div class="rwd-sidenav">
+		<h1 class="sys-title"><a href="login.jsp">SBI</a></h1>
+		<a href="#" class="smenu-close"></a>
+		<ul>
+			<li><img src="images/sidenav-transaction.svg" alt="">交易處理
+				<ul>
+					<li><a href="order-transfer.html">訂單拋轉作業</a></li>
+					<li><a href="ui-elements.html">UI 元件列表</a></li>
+				</ul>
+			</li>
+			<li><img src="images/sidenav-support.svg" alt="">後臺支援系統
+				<ul>
+					<li><a href="page-template.html">進貨管理</a></li>
+					<li><a href="#">銷貨管理</a></li>
+					<li><a href="#">庫存管理</a></li>
+					<li><a href="#">商品類型管理</a></li>
+					<li><a href="#">商品單位管理</a></li>
+					<li><a href="#">供應商管理</a></li>
+					<li><a href="#">用戶管理</a></li>
+					<li><a href="#">公司管理</a></li>
+					<li><a href="#">進貨管理</a></li>
+					<li><a href="#">銷貨管理</a></li>
+					<li><a href="#">庫存管理</a></li>
+					<li><a href="#">商品類型管理</a></li>
+					<li><a href="#">商品單位管理</a></li>
+					<li><a href="#">供應商管理</a></li>
+					<li><a href="#">用戶管理</a></li>
+					<li><a href="#">公司管理</a></li>
+				</ul>
+			</li>
+			<li><img src="images/sidenav-report.svg" alt="">報表管理
+				<ul>
+					<li><a href="#">訂單報表</a></li>
+					<li><a href="#">配送報表</a></li>
+					<li><a href="#">退貨報表</a></li>
+				</ul>
+			</li>
+			<li><img src="images/sidenav-chart.svg" alt="">分析圖表
+				<ul>
+					<li><a href="#">出貨量統計圖</a></li>
+					<li><a href="#">銷售金額統計圖</a></li>
+					<li><a href="#">銷售金額比例統計圖</a></li>
+				</ul>
+			</li>
+			<li><img src="images/sidenav-school.svg" alt="">線上學院
+				<ul>
+					<li><a href="#">線上學院</a></li>
+				</ul>
+			</li>
+		</ul>
+		<a href="login.html" class="btn-logout">登出</a>
+	</div><!-- /.rwd-sidenav -->
+
+
+	<div class="content-wrap">
+		<h2 class="page-title">UI 元件列表</h2>
+
+		<div class="search-result-wrap">
+			
+			<section>
+				<h3 class="ui-list-title">Headings</h3>
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+			</section>
+
+			<section>
+				<h3 class="ui-list-title">Inputs</h3>
+				<div class="form-wrap">
+					<div class="form-row">
+						<div class="col-4">
+							<label for="">Label
+								<input type="text">
+							</label>
+						</div>
+						<div class="col-4">
+							<label for="">Label
+								<input type="text">
+							</label>
+						</div>
+						<div class="col-4">
+							<label for="">Label
+								<input type="text">
+							</label>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-4">
+							<label for="">
+								<span class="block-label">Block Label</span>
+								<input type="text">
+							</label>
+						</div>
+						<div class="col-4">
+							<label for="">
+								<span class="block-label">Block Label</span>
+								<input type="text">
+							</label>
+						</div>
+						<div class="col-4">
+							<label for="">
+								<span class="block-label">Block Label</span>
+								<input type="text">
+							</label>
+						</div>
+					</div>
+				</div><!-- /.form-wrap -->
+			</section>
+
+			<section>
+				<h3 class="ui-list-title">Dropdown</h3>
+				<div class="form-wrap">
+					<div class="form-row row">
+						<select name="" id="">
+							<option value="">選項</option>
+							<option value="">選項</option>
+							<option value="">選項</option>
+							<option value="">選項</option>
+							<option value="">選項</option>
+							<option value="">選項</option>
+						</select>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h3 class="ui-list-title">Checkbox</h3>
+				<div class="form-wrap">
+					<div class="form-row">
+						<input id="checkbox-1" type="checkbox" checked>
+						<label for="checkbox-1"><span class="form-label">選取</span></label>
+						<input id="checkbox-2" type="checkbox">
+						<label for="checkbox-2"><span class="form-label">未選取</span></label>
+						<input id="checkbox-3" type="checkbox" checked disabled="">
+						<label for="checkbox-3"><span class="form-label">選取 Disable</span></label>
+						<input id="checkbox-4" type="checkbox" disabled>
+						<label for="checkbox-4"><span class="form-label">未選取 Disable</span></label>
+					</div>
+				</div><!-- /.form-wrap -->
+			</section>
+
+			<section>
+				<h3 class="ui-list-title">Radio Button</h3>
+				<div class="form-wrap">
+					<div class="form-row">
+						<input id="radio-4" type="radio" name="radio-group-2" checked><label for="radio-4"><span class="form-label">選取</span></label>
+	          <input id="radio-5" type="radio" name="radio-group-2"><label for="radio-5"><span class="form-label">未選取</span></label>
+	          <input id="radio-6" type="radio" name="radio-group-3" checked disabled><label for="radio-6"><span class="form-label">選取 Disable</span></label>
+	          <input id="radio-7" type="radio" name="radio-group-3" disabled><label for="radio-7"><span class="form-label">未選取 Disable</span></label>
+					</div>
+				</div><!-- /.form-wrap -->
+			</section>
+
+			<section>
+				<h3 class="ui-list-title">Button</h3>
+				<div class="form-row">
+					<a href="#" class="btn btn-primary">按鈕 primary</a>
+					<a href="#" class="btn btn-exec">按鈕 exec</a>
+					<a href="#" class="btn btn-alert">按鈕 alert</a>
+					<a href="#" class="btn btn-darkblue">按鈕 darkblue</a>
+					<a href="#" class="btn btn-green">按鈕 green</a>
+					<a href="#" class="btn btn-orange">按鈕 orange</a>
+					<a href="#" class="btn btn-gray">按鈕 gray</a>
+				</div>
+			</section>
+		
+			<section>
+				<h3 class="ui-list-title">Table</h3>
+				<div class="result-table-wrap">
+					<table class="result-table scrollTable">
+						<thead>
+							<tr>
+								<th>標題</th>
+								<th>標題</th>
+								<th>標題</th>
+								<th>標題</th>
+								<th>標題</th>
+								<th>標題</th>
+								<th>標題</th>
+								<th>標題</th>
+								<th>標題</th>
+								<th>標題</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+							</tr>
+							<tr>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+							</tr>
+							<tr>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+							</tr>
+							<tr>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+							</tr>
+							<tr>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+								<td>內容</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- /.result-table-wrap -->
+			</section>
+
+			<section class="grid-bg">
+				<h3 class="ui-list-title">Grid (12等分)</h3>
+				<div class="row">
+					<div class="col-1">.col-1</div>
+					<div class="col-11">.col-11</div>
+				</div>
+				<div class="row">
+					<div class="col-2">.col-2</div>
+					<div class="col-10">.col-10</div>
+				</div>
+				<div class="row">
+					<div class="col-3">.col-3</div>
+					<div class="col-9">.col-9</div>
+				</div>
+				<div class="row">
+					<div class="col-4">.col-4</div>
+					<div class="col-8">.col-8</div>
+				</div>
+				<div class="row">
+					<div class="col-5">.col-5</div>
+					<div class="col-7">.col-7</div>
+				</div>
+				<div class="row">
+					<div class="col-6">.col-6</div>
+					<div class="col-6">.col-6</div>
+				</div>
+				<div class="row">
+					<div class="col-7">.col-7</div>
+					<div class="col-5">.col-5</div>
+				</div>
+				<div class="row">
+					<div class="col-8">.col-8</div>
+					<div class="col-4">.col-4</div>
+				</div>
+				<div class="row">
+					<div class="col-9">.col-9</div>
+					<div class="col-3">.col-3</div>
+				</div>
+				<div class="row">
+					<div class="col-10">.col-10</div>
+					<div class="col-2">.col-2</div>
+				</div>
+				<div class="row">
+					<div class="col-11">.col-11</div>
+					<div class="col-1">.col-1</div>
+				</div>
+				<div class="row">
+					<div class="col-12">.col-12</div>
+				</div>
+
+				<hr class="hr-gray">
+
+				<div class="row">
+					<div class="col-1">.col-1</div>
+					<div class="col-1">.col-1</div>
+					<div class="col-1">.col-1</div>
+					<div class="col-1">.col-1</div>
+					<div class="col-1">.col-1</div>
+					<div class="col-1">.col-1</div>
+					<div class="col-1">.col-1</div>
+					<div class="col-1">.col-1</div>
+					<div class="col-1">.col-1</div>
+					<div class="col-1">.col-1</div>
+					<div class="col-1">.col-1</div>
+					<div class="col-1">.col-1</div>
+				</div>
+				<div class="row">
+					<div class="col-2">.col-2</div>
+					<div class="col-2">.col-2</div>
+					<div class="col-2">.col-2</div>
+					<div class="col-2">.col-2</div>
+					<div class="col-2">.col-2</div>
+					<div class="col-2">.col-2</div>
+				</div>
+				<div class="row">
+					<div class="col-3">.col-3</div>
+					<div class="col-3">.col-3</div>
+					<div class="col-3">.col-3</div>
+					<div class="col-3">.col-3</div>
+				</div>
+				<div class="row">
+					<div class="col-4">.col-4</div>
+					<div class="col-4">.col-4</div>
+					<div class="col-4">.col-4</div>
+				</div>
+				<div class="row">
+					<div class="col-6">.col-6</div>
+					<div class="col-6">.col-6</div>
+				</div>
+			</section>
+
+		</div><!-- /.search-result-wrap -->
+
+	</div><!-- /.content-wrap -->
+</div><!-- /.page-wrapper -->
+<footer class="footer">
+	北祥股份有限公司 <span>電話：+886-2-2658-1910</span><span>傳真：+886-2-2658-1920</span>
+</footer><!-- / .footer -->
+
+<script src="vendor/js/jquery-1.12.4.min.js"></script>
+<script src="vendor/js/jquery-ui.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

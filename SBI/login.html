@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>北祥股份有限公司 SBI 使用者登入</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="login-body">
+	<div class="login-wrapper">
+
+		<div class="login-panel-wrap">
+		<div class="login-panel">
+			<h1 class="sys-logo">SBI</h1>
+			<h2>使用者登入</h2>
+			<form>
+				<label for="uninumber">
+					<span class="block-label">統編</span>
+					<input type="text" id="uninumber" class="error">
+					<span class="error-msg">查無貴公司統編</span>
+				</label>
+				<label for="username">
+					<span class="block-label">帳號</span>
+					<input type="text" id="username">
+					<!-- <span class="error-msg">長度不能超過10個字</span> -->
+				</label>
+				<label for="password">
+					<span class="block-label">密碼</span>
+					<input type="password" id="password">
+					<!-- <span class="error-msg">長度不能超過10個字</span> -->
+				</label>
+				<div class="verify-wrap">
+					<label for="verify">
+						<span class="block-label">認證碼</span>
+						<input type="text" id="verify">
+						<!-- <span class="error-msg">認證錯誤</span> -->
+					</label>
+					<div class="captcha-wrap">
+						<img src="images/captcha.jpg" alt="">
+					</div>
+				</div><!-- /.verify-wrap -->
+				<div class="login-btn-wrap">
+					<a href="page-template.html" class="login-button">登入</a>
+					<a href="#" class="login-reset-button">清除重填</a>					
+				</div><!-- /.login-btn-wrap -->
+			</form>
+		</div><!-- /.login-panel -->
+		</div><!-- /.login-panel-wrap -->
+
+		<div class="login-footer">
+			北祥股份有限公司 <span>服務電話：+886-2-2658-1910 | 傳真：+886-2-2658-1920</span>
+		</div><!-- /.login-footer -->
+
+	</div><!-- /.login-wrapper -->
+</body>
+</html>
